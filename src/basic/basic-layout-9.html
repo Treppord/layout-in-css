@@ -6,7 +6,30 @@
     <title>Basic Layout 9</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
-      /* Doe hier jouw ding! */
+           body{
+        display: grid;
+        grid-template-columns: 0.25fr 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+        grid-gap: 0.5rem;
+        overflow: hidden;
+        padding: 1em;
+        grid-template-areas:
+        "header nav"
+        "main main"
+        "footer footer"
+      }
+      header{
+        grid-area: header;
+      }
+      main{
+        grid-area: main;
+      }
+      nav{
+        grid-area: nav;
+      }
+      footer{
+        grid-area: footer;
+      }
     </style>
   </head>
   <body id="basic-layout-9">
